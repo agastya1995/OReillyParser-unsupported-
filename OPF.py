@@ -6,7 +6,7 @@ import random
 class OPF_Creator():
     '''
     Creates an opf file (to create the mobi file)
-    '''
+    ''' 
     def __init__(self, Directory = '.', NCX_File = None, HTML_TOC = None):
         self.OPF_File = open(os.path.join(Directory,'content.opf'), 'w')
         self.NCX_File = NCX_File
