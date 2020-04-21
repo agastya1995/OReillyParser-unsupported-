@@ -7,8 +7,7 @@ import tempfile
 if __name__=='__main__':
     args = len(sys.argv)-1
 
-    helpDocs =
-    '''
+    helpDocs = '''
     Usage - python bookDownloader.py book_url email password image_size(optional)
 
     You can also run the file without any arguments and enter the information at the prompt. 
