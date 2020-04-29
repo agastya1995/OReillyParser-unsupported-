@@ -135,6 +135,7 @@ class SafariBookParser():
         prefs = {"profile.managed_default_content_settings.images": 2}
         chrome_options.add_experimental_option("prefs", prefs)
         chrome_options.add_argument('--headless')
+        chrome_options.add_argument('log-level=3')
         try:
             self.driver = webdriver.Chrome(chrome_options=chrome_options)
         except(WebDriverException):
@@ -196,13 +197,7 @@ class SafariBookParser():
         #base_page = (r'/').join(page_url.split(r'/')[:-1])+r'/'
         ISBN = page_url.split(r'/')[-2]
         domain = r'https://learning.oreilly.com'
-        '''
-        try:
-            os.mkdir(ISBN)
-        except(FileExistsError):
-            pass
-        os.chdir(ISBN)
-        '''
+
         # First link of the table of contents
         toc = TOC_and_Metadata(page_url, self.auth.username, self.auth.password)
         first_toc_link = toc.create_TOC()
@@ -289,7 +284,7 @@ class SafariBookParser():
             opf.Add_Items(id=id, link=page_name)
             id += 1
             
-            with open(page_name, 'w') as f:
+            with open(page_name, 'w', encoding='utf-8') as f:
                 print(html_start(), file=f)
 
                 # Print content. Break when it reaches a certain class

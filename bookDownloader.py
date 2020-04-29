@@ -49,7 +49,7 @@ if __name__=='__main__':
 
     # Checks if the folder already exists or not (in case the program crashed earlier)
     tempFolder = None
-    for folder in os.listdir(tempfile.gettempdir()):
+    for folder in os.listdir(tempfile.gettempdir()): 
         if folder.endswith(isbn):
             tempFolder = os.path.join(tempfile.gettempdir(), folder)
             break
@@ -74,6 +74,5 @@ if __name__=='__main__':
 
     print('\nCompleted')
 
-    # Copy epub to the main folder and delete the temp folder
+    # Copy epub to the main folder
     shutil.copy(os.path.join(tempFolder, title +'.epub'), currentFolder)
-    shutil.rmtree(tempFolder)
