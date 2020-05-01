@@ -9,8 +9,11 @@
 
 If no arguments are given, the script will prompt for an input.
 
-### Requirements ###
+##### Requirements #####
+
 Apart from the required python libraries (given in the requirements.txt file), you will also need to download chromedriver from [here](https://sites.google.com/a/chromium.org/chromedriver/home). The version of the chrome driver should be the same as your version of google chrome. Additionally, the chromedriver executable must be in your PATH.
+
+##### Arguments #####
 
 Url - The url to the book to download. It should be the home page of the book. The format is 
 "https://learning.oreilly.com/library/view/book_name/isbn/". 
@@ -21,7 +24,7 @@ Password - The password of the abovementioned user id. Please note that the pass
 
 Image Size - (Optional) - The maximum dimmension (either length or width) of the images in the book. Default is 600 pixels. 
 
-
+In case no arguments are entered, the program will ask for the url, username and password.
 
 
 
