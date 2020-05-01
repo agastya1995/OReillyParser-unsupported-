@@ -9,14 +9,19 @@
 
 If no arguments are given, the script will prompt for an input.
 
-Username - The email used to sign up. Your username must be valid and should have premium access (on signing up, you will get a 15 day free trial)
+### Requirements ###
+Apart from the required python libraries (given in the requirements.txt file), you will also need to download chromedriver from [here](https://sites.google.com/a/chromium.org/chromedriver/home). The version of the chrome driver should be the same as your version of google chrome. Additionally, the chromedriver executable must be in your PATH.
 
-Image Size - (Optional) - The maximum dimmension (either length or width) of the images in the book. Default is 600 pixels. 
-
-URL - The url to the book to download. It should be the home page of the book. The format is 
+Url - The url to the book to download. It should be the home page of the book. The format is 
 "https://learning.oreilly.com/library/view/book_name/isbn/". 
 The link will always end with a 10 digit book id (isbn). 
 
-Download chromedriver from [here](https://sites.google.com/a/chromium.org/chromedriver/home) 
+Username - The email used to sign up. Your username must be valid and should have premium access (on signing up, you will get a 15 day free trial)
+Password - The password of the abovementioned user id. Please note that the password is not hidden.
 
-The version of the chrome driver should be the same as your version of chrome. Additionally, the chromedriver executable must be in your PATH.
+Image Size - (Optional) - The maximum dimmension (either length or width) of the images in the book. Default is 600 pixels. 
+
+
+
+
+
