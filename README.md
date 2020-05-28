@@ -19,7 +19,7 @@ Url - The url to the book to download. It should be the home page of the book. T
 "https://learning.oreilly.com/library/view/book_name/isbn/". 
 The link will always end with a 10 digit book id (isbn). 
 
-Username - The email used to sign up. Your username must be valid and should have premium access (on signing up, you will get a 15 day free trial)
+Username - The email used to sign up. Your username must be valid and should have premium access (on signing up, you will get a 15 day free trial). ##### Do not use your Google/Linkedin or any other OAuth account to sign up, but instead manually fill up the sign up form. I recommend using disposable emails like this one[10minutemail.com] #### 
 Password - The password of the abovementioned user id. Please note that the password is not hidden.
 
 Image Size - (Optional) - The maximum dimmension (either length or width) of the images in the book. Default is 600 pixels. 
